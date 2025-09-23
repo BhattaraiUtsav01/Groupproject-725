@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "name": "studentlife-backend-vaishnav",
   "version": "1.0.0",
@@ -15,3 +16,6 @@
     "mongoose": "^7.8.7"
   }
 }
+=======
+{"name":"student-life-app-v2","version":"1.0.0","type":"module","scripts":{"start":"node server.js"},"dependencies":{"express":"^4.19.2"}}
+>>>>>>> b8f803203d01370b898ead66c4ae58e5e1993299

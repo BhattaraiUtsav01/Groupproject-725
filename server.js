@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
@@ -25,3 +26,18 @@ mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopol
     app.listen(PORT, () => console.log(`Server running on http://localhost:${PORT}`));
   })
   .catch(err => console.log(err));
+=======
+import express from "express";
+import path from "path";
+import { fileURLToPath } from "url";
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const app = express();
+const PORT = process.env.PORT || 3000;
+app.use(express.static(path.join(__dirname, "public")));
+app.get("/", (req,res)=> res.redirect("/home"));
+["home","profile","rooms","supermarkets","shop","finance","community","dashboard"].forEach(p=>{
+  app.get("/"+p,(req,res)=> res.sendFile(path.join(__dirname,"public/pages/"+p+".html")));
+});
+app.listen(PORT, ()=>console.log("Server running on http://localhost:"+PORT));
+>>>>>>> b8f803203d01370b898ead66c4ae58e5e1993299
