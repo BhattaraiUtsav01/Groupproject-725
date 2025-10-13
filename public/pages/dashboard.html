@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StudentLife - Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="bg-gray-50 dark:bg-gray-900">
+  <nav class="bg-white/90 backdrop-blur dark:bg-gray-800 sticky top-0 z-40 shadow">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+    <div class="flex items-center space-x-8 nav">
+      <a href="/home" class="font-bold text-blue-600 text-lg">StudentLife</a>
+      <a href="/home" class="">Home</a>
+      <a href="/profile" class="">Profile</a>
+      <a href="/rooms" class="">Rooms</a>
+      <a href="/supermarkets" class="">Supermarkets</a>
+      <a href="/shop" class="">Marketplace</a>
+      <a href="/finance" class="">Finance</a>
+      <a href="/community" class="">Community</a>
+      <a href="/dashboard" class="">Dashboard</a>
+    </div>
+    <button id="theme-toggle" class="text-gray-500">🌓</button>
+  </div>
+</nav>
+  <main><section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12"><div class="bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg shadow p-6 mb-8 text-white"><h1 class="text-2xl font-bold mb-2">Dashboard Overview</h1><p class="text-blue-100">Quick glance at your saved items and listings.</p></div><div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6"><div class="bg-white dark:bg-gray-800 rounded-lg shadow p-6"><div class="text-sm text-gray-500">Saved Stores</div><div class="text-2xl font-bold" id="dash-supermarkets">0</div></div><div class="bg-white dark:bg-gray-800 rounded-lg shadow p-6"><div class="text-sm text-gray-500">Saved Events</div><div class="text-2xl font-bold" id="dash-events">0</div></div><div class="bg-white dark:bg-gray-800 rounded-lg shadow p-6"><div class="text-sm text-gray-500">Marketplace Items</div><div class="text-2xl font-bold" id="dash-items">0</div></div><div class="bg-white dark:bg-gray-800 rounded-lg shadow p-6"><div class="text-sm text-gray-500">Room Listings</div><div class="text-2xl font-bold" id="dash-rooms">0</div></div></div></section></main>
+  <footer class="footer bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700">
+    <div class="max-w-7xl mx-auto py-6 text-center text-sm text-gray-500 dark:text-gray-400">StudentLife © 2025</div>
+  </footer>
+  <script src="/js/common.js"></script>
+<script src="/js/dashboard.js"></script>
+</body>
+</html>

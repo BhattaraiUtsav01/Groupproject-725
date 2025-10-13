@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StudentLife - Rooms</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="bg-gray-50 dark:bg-gray-900">
+  <nav class="bg-white/90 backdrop-blur dark:bg-gray-800 sticky top-0 z-40 shadow">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+    <div class="flex items-center space-x-8 nav">
+      <a href="/home" class="font-bold text-blue-600 text-lg">StudentLife</a>
+      <a href="/home" class="">Home</a>
+      <a href="/profile" class="">Profile</a>
+      <a href="/rooms" class="">Rooms</a>
+      <a href="/supermarkets" class="">Supermarkets</a>
+      <a href="/shop" class="">Marketplace</a>
+      <a href="/finance" class="">Finance</a>
+      <a href="/community" class="">Community</a>
+      <a href="/dashboard" class="">Dashboard</a>
+    </div>
+    <button id="theme-toggle" class="text-gray-500">🌓</button>
+  </div>
+</nav>
+  <main><section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12"><h1 class="text-3xl font-bold mb-6">Room Sharing</h1><div id="rooms-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6"></div></section></main>
+  <footer class="footer bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700">
+    <div class="max-w-7xl mx-auto py-6 text-center text-sm text-gray-500 dark:text-gray-400">StudentLife © 2025</div>
+  </footer>
+  <script src="/js/common.js"></script>
+<script src="/js/rooms.js"></script>
+</body>
+</html>
